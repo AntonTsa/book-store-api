@@ -14,8 +14,8 @@ class BookStoreApiApplicationTests {
 
     @Test
     void verifiesModularStructure() {
-        ApplicationModules modules = ApplicationModules.of(BookStoreApiApplication.class);
-        modules.verify();
+        ApplicationModules.of(BookStoreApiApplication.class)
+                .verify();
     }
 
 }
